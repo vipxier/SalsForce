@@ -7,7 +7,7 @@ public class NumberOfIslands {
 	private static int[] rowAdjustment = new int[] { 1, 0, -1, 0 };
 	private static int[] colAdjustment = new int[] { 0, 1, 0, -1 };
 	
-	public static int numIslands(char[][] grid) {
+	public  int numIslands(char[][] grid) {
 		if (grid == null || grid.length == 0 || grid[0].length == 0) {
 			return 0;
 		}
@@ -61,8 +61,7 @@ public class NumberOfIslands {
 			{ '0', '0', '1', '0', '0' },
 			{ '1', '1', '1', '1', '1' } 
 			};
-
-		System.out.println(numIslands(islandMap));
+		NumberOfIslands solution = new NumberOfIslands();
+		System.out.println(solution.numIslands(islandMap));
 	}
-
 }
